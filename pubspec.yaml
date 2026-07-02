@@ -1,0 +1,36 @@
+name: sky_dash
+description: An addictive vertical dodger with infinite replayability and character skins.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.20.0
+  flame_audio: ^2.1.0
+  shared_preferences: ^2.3.0
+  google_mobile_ads:
+    git:
+      url: https://github.com/googleads/googleads-mobile-flutter.git
+      path: packages/google_mobile_ads
+  in_app_purchase: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/characters/
+    - assets/images/obstacles/
+    - assets/images/backgrounds/
+    - assets/images/ui/
+    - assets/images/particles/
+    - assets/audio/sfx/
+    - assets/audio/music/
+    - assets/fonts/
